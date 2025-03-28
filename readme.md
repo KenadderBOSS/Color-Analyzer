@@ -1,4 +1,4 @@
-# EN CONSTRUCCIÓN
+# EN CONSTRUCCIÓNNNNNN
 
 # Por qué
 Hoy en día, muchas páginas web ofrecen herramientas de análisis de colores o "color pickers", pero suelen requerir que subas imágenes a bases de datos externas. Esto puede no ser ideal por varias razones, especialmente cuando se trata de imágenes confidenciales o muy personales. Al utilizar estas plataformas, puedes estar comprometiendo tu privacidad al compartir imágenes sensibles sin una protección adecuada.
