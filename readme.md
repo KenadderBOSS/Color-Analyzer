@@ -28,14 +28,15 @@ Este programa analiza una imagen y extrae los colores predominantes. Utiliza la 
 ## Instalación y Uso
 
 Clona este repositorio:
-
+```bash
 git clone https://github.com/KenadderBOSS/Color-Analyzer
 cd Color-Analyzer
-
+```
 #### Ejecuta el script en Python:
+```bash
 
 python color_analyzer.py
-
+```
 Carga una imagen y haz clic sobre un píxel para obtener su color.
 
 Si estas en otro sistema operativo y tienes algún error, hazmelo saber.
