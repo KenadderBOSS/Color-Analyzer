@@ -39,9 +39,17 @@ python color_analyzer.py
 ```
 Carga una imagen y haz clic sobre un píxel para obtener su color.
 
+# Requisitos
++ python 3.0 o +
++ customtkinter
++ pillow
++ pyperclip
++ numpy
++ scikit-learn
+
 Si estas en otro sistema operativo y tienes algún error, hazmelo saber.
 
 Instala las dependencias con pip:
 
 ```bash
-pip install pillow pyperclip
+pip install customtkinter pillow pyperclip numpy scikit-learn
