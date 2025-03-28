@@ -44,3 +44,8 @@ Instala las dependencias con pip:
 
 ```bash
 pip install pillow pyperclip
+```
+
+## Licencia
+
+Este proyecto está licenciado bajo la GNU General Public License v3.0 (GPL-3.0).
