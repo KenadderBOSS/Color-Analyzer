@@ -1,3 +1,5 @@
+### EN CONSTRUCCIÓN ###
+
 import tkinter as tk
 from tkinter import filedialog, Label, Button, Canvas, messagebox
 from PIL import Image, ImageTk
@@ -5,7 +7,7 @@ import pyperclip
 import webbrowser
 
 def open_discord():
-    discord_url = "https://discord.gg/Mqw6BUZB3w" # Mi grupo de discord
+    discord_url = "https://discord.gg/Mqw6BUZB3w"  # Mi grupo de discord
     webbrowser.open(discord_url)  # Abre la URL en el navegador
 
 # Función para cargar la imagen
@@ -14,8 +16,8 @@ def load_image():
     file_path = filedialog.askopenfilename(title="Color Analysis", filetypes=[("Archivos de imagen", "*.png;*.jpg;*.jpeg;*.bmp")])
     
     if file_path:
-        img = Image.open(file_path)
-        img.thumbnail((400, 400))  # Redimensiona para ajustarse al tamaño de la ventana
+        img = Image.open(file_path)  # Carga la imagen seleccionada
+        img.thumbnail((400, 400))  # Redimensiona la imagen para ajustarse al tamaño de la ventana
         img_tk = ImageTk.PhotoImage(img)
         
         # Mostrar la imagen en la interfaz
@@ -39,7 +41,7 @@ def get_color(event):
         # Convertir el color a formato hexadecimal
         hex_color = "#{:02x}{:02x}{:02x}".format(color[0], color[1], color[2])
         
-        # Mostrar el color y su valor hexadecimal
+        # Mostrar el color y su valor hexadecimal en el label
         color_label.config(bg=hex_color, text=f"Color RGB: {color}\nColor Hex: {hex_color}")
         
         # Copiar al portapapeles
@@ -70,21 +72,17 @@ header_frame.pack(fill="x", pady=10)
 header = tk.Label(root, font=("Arial", 24))
 header.pack(pady=20)
 header_frame.configure(bg="black")
+
+# Botón para acceder a Discord
 discord_button = tk.Button(header_frame, text="Discord", command=open_discord, font=("Helvetica Neue", 12), fg="white", bg="#5865F2", relief="flat", activebackground="#4752C4", cursor="hand2")
 discord_button.pack(side="right", padx=10)
-
-
-
-
-
-
-
 
 # Imagen de tu GitHub
 github_image = Image.open("126710096.png")  # Asegúrate de colocar tu foto en el directorio correcto
 github_image = github_image.resize((40, 40))  # Tamaño de la foto
 github_image_tk = ImageTk.PhotoImage(github_image)
 
+# Mostrar la imagen de GitHub
 github_label = tk.Label(header_frame, image=github_image_tk, bg="#f0f0f0")
 github_label.pack(side="left", padx=10)
 
@@ -92,7 +90,7 @@ github_label.pack(side="left", padx=10)
 github_name = "@KenadderBOSS"  # Cambia con tu nombre de usuario en GitHub
 github_name_label = tk.Label(header_frame, text=github_name, font=("Helvetica Neue", 14, "bold"), fg="#FFFFFF", bg="#000000", cursor="hand2")
 github_name_label.pack(side="left")
-github_name_label.bind("<Button-1>", lambda e: open_github())  # Redirige al perfil de GitHub
+github_name_label.bind("<Button-1>", lambda e: open_github())  # Redirige al perfil de GitHub al hacer clic
 
 # Crear un canvas para mostrar la imagen
 canvas = tk.Canvas(root, width=400, height=400, bg="#ffffff", bd=0, highlightthickness=0)
@@ -102,7 +100,7 @@ canvas.pack(padx=10, pady=10)
 load_button = tk.Button(root, text="Cargar Imagen", command=load_image, font=("Helvetica Neue", 14), fg="white", bg="#007BFF", relief="flat", activebackground="#0056b3")
 load_button.pack(pady=10)
 
-# Crear un label para mostrar el color
+# Crear un label para mostrar el color seleccionado
 color_label = Label(root, text="Haz clic en un píxel de la imagen", width=30, height=5, bg="#f0f0f0", fg="#333333", font=("Helvetica Neue", 12))
 color_label.pack(padx=10, pady=20)
 
@@ -116,6 +114,7 @@ canvas.bind("<Button-1>", get_color)
 # Variable para almacenar la imagen cargada
 current_image = None
 
+# Cambios en el color del botón de carga al interactuar con el mouse
 def on_enter(e):
     load_button.config(bg="#0056b3")  # Azul más oscuro al pasar el mouse
 
@@ -126,12 +125,12 @@ def on_click(e):
     load_button.config(bg="#003d80")  # Azul más oscuro al hacer clic
     root.after(150, lambda: load_button.config(bg="#0056b3"))  # Vuelve al hover después de 150ms
 
-# Asociar eventos al botón
+# Asociar eventos al botón de carga
 load_button.bind("<Enter>", on_enter)
 load_button.bind("<Leave>", on_leave)
 load_button.bind("<Button-1>", on_click)
 
-
+# Icono de la ventana
 icono = Image.open("icono.png")  # Usa un PNG de 32x32 o 64x64
 icono = ImageTk.PhotoImage(icono)
 

@@ -7,6 +7,8 @@ Esta aplicación está diseñada con fines de seguridad personal y práctica. Co
 
 Al utilizar esta aplicación, tienes el control total sobre tus imágenes y tus datos. No hay registros, suscripciones ni necesidad de compartir nada con plataformas externas.
 
+### FUNCIONA SIN INTERNET
+
 # Aplicación de Análisis de Colores en Imágenes
 
 Este programa analiza una imagen y extrae los colores predominantes. Utiliza la librería `Pillow` para manejar imágenes y `matplotlib` para visualizar los resultados.
