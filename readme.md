@@ -1,6 +1,6 @@
-# EN CONSTRUCCIÓNNNNN
+# EN CONSTRUCCIÓN
 
-# Por qué
+# ¿Para qué?
 Hoy en día, muchas páginas web ofrecen herramientas de análisis de colores o "color pickers", pero suelen requerir que subas imágenes a bases de datos externas. Esto puede no ser ideal por varias razones, especialmente cuando se trata de imágenes confidenciales o muy personales. Al utilizar estas plataformas, puedes estar comprometiendo tu privacidad al compartir imágenes sensibles sin una protección adecuada.
 
 Algunas de estas plataformas también requieren registros o suscripciones para acceder a funciones adicionales. Esto puede ser innecesario si solo planeas utilizar la herramienta una o dos veces, además de que pueden pedirte datos personales como parte del proceso.
@@ -22,6 +22,10 @@ Este programa analiza una imagen y extrae los colores predominantes. Utiliza la 
 - Matplotlib
 
 ## Instalación
+
+Descargar última release, extraer en una carpeta, ejecutar el .exe y seleccionar una imagen.
+
+Si estas en otro sistema operativo y tienes algún error, hazmelo saber.
 
 Instala las dependencias con pip:
 
