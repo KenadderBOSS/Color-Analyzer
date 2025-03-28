@@ -15,20 +15,32 @@ Al utilizar esta aplicación, tienes el control total sobre tus imágenes y tus 
 
 Este programa analiza una imagen y extrae los colores predominantes. Utiliza la librería `Pillow` para manejar imágenes y `matplotlib` para visualizar los resultados.
 
-## Requisitos
+# Características
 
-- Python 3.x
-- Pillow
-- Matplotlib
++ Carga de imágenes en formatos PNG, JPG, JPEG y BMP.
 
-## Instalación
++ Obtención del color de cualquier píxel de la imagen.
 
-Descargar última release, extraer en una carpeta, ejecutar el .exe y seleccionar una imagen.
++ Conversión del color a formato hexadecimal.
+
++ Copia automática del código hexadecimal al portapapeles.
+
+## Instalación y Uso
+
+Clona este repositorio:
+
+git clone https://github.com/KenadderBOSS/Color-Analyzer
+cd Color-Analyzer
+
+#### Ejecuta el script en Python:
+
+python color_analyzer.py
+
+Carga una imagen y haz clic sobre un píxel para obtener su color.
 
 Si estas en otro sistema operativo y tienes algún error, hazmelo saber.
 
 Instala las dependencias con pip:
 
 ```bash
-pip install pillow matplotlib
-
+pip install pillow pyperclip
