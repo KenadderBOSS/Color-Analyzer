@@ -1,86 +1,85 @@
-# EN CONSTRUCCIÓN
+# Análisis de Colores en Imágenes
 
-Este programa esta hecho solo por mi, un estudiante de seguridad informática, es posible que encuentres errores, puedes ver el código del programa en todo momento y aceptaré consejos, optimizaciones o reutilización de este código en otro repositorio. 
+## **Descripción**
 
-# ¿Para qué?
-Hoy en día, muchas páginas web ofrecen herramientas de análisis de colores o "color pickers", pero suelen requerir que subas imágenes a bases de datos externas. Esto puede no ser ideal por varias razones, especialmente cuando se trata de imágenes confidenciales o muy personales. Al utilizar estas plataformas, puedes estar comprometiendo tu privacidad al compartir imágenes sensibles sin una protección adecuada.
+Este programa ha sido desarrollado por mí, un estudiante de seguridad informática. A medida que lo uses, puedes encontrar errores o áreas de mejora. El código está disponible públicamente, y agradezco cualquier consejo, optimización o reutilización de este proyecto en otros repositorios.
 
-Algunas de estas plataformas también requieren registros o suscripciones para acceder a funciones adicionales. Esto puede ser innecesario si solo planeas utilizar la herramienta una o dos veces, además de que pueden pedirte datos personales como parte del proceso.
+## **¿Por qué usar esta aplicación?**
 
-Esta aplicación está diseñada con fines de seguridad personal y práctica. Con ella, puedes realizar el análisis de colores sin necesidad de subir tus imágenes a servidores de terceros, lo que te permite mantener tu privacidad y evitar el intercambio de datos personales. Además, está hecha 100% en Python por una sola persona y es exclusiva para Windows por ahora. No se ha probado su funcionamiento en Linux.
+Hoy en día, existen muchas páginas web que ofrecen herramientas de análisis de colores o "color pickers", pero a menudo requieren que subas imágenes a servidores externos. Esto puede comprometer tu privacidad, especialmente si las imágenes son confidenciales o personales. 
 
-Al utilizar esta aplicación, tienes el control total sobre tus imágenes y tus datos. No hay registros, suscripciones ni necesidad de compartir nada con plataformas externas.
+Además, algunas de estas plataformas requieren registros o suscripciones, lo que puede resultar innecesario si solo planeas usar la herramienta una o dos veces. Estas plataformas también pueden solicitar datos personales, lo cual puede ser un inconveniente.
 
-### FUNCIONA SIN INTERNET
+Este programa te permite realizar el análisis de colores **localmente**, sin necesidad de subir imágenes a servidores externos, lo que garantiza tu privacidad y evita el intercambio de datos personales. Está hecho 100% en Python por una sola persona y es compatible con Windows y Linux.
 
-# Aplicación de Análisis de Colores en Imágenes
+### **Funciona sin conexión a Internet**
 
-Este programa analiza una imagen y extrae los colores predominantes. Utiliza la librería `Pillow` para manejar imágenes y `matplotlib` para visualizar los resultados.
+## **Características**
 
-# Características
+- Carga imágenes en los formatos PNG, JPG, JPEG y BMP.
+- Obtiene el color de cualquier píxel de la imagen.
+- Convierte el color a formato hexadecimal.
+- Copia automáticamente el código hexadecimal al portapapeles.
 
-+ Carga de imágenes en formatos PNG, JPG, JPEG y BMP.
+## **Instalación y Uso**
 
-+ Obtención del color de cualquier píxel de la imagen.
+### **Usando la última Release (sin necesidad de instalación)**
 
-+ Conversión del color a formato hexadecimal.
+Si solo deseas usar el programa sin modificar el código o clonar el repositorio, puedes descargar la última versión en formato `.exe` desde la página de releases.
 
-+ Copia automática del código hexadecimal al portapapeles.
+1. Descarga la última release [aquí](https://github.com/KenadderBOSS/Color-Analyzer/releases).
+2. Ejecuta el archivo `.exe` y comienza a analizar colores de imágenes.
 
-## 1 Instalación y Uso | Windows y Linux
-Descarga la ultima release y ejecuta el archivo .exe .
+### **Clonando el Repositorio (si deseas personalizar el programa)**
 
-## 1.1 Clonando el repositorio el repositorio | Instalación y Uso | Windows 
+Si deseas clonar el repositorio y personalizar el programa, necesitarás instalar algunas dependencias.
 
-Opción 1. Descarga la ultima [🔗 release](https://github.com/KenadderBOSS/Color-Analyzer/releases)
+1. Clona el repositorio:
+    ```bash
+    git clone https://github.com/KenadderBOSS/Color-Analyzer
+    cd Color-Analyzer
+    ```
 
-Opción 2. Clona este repositorio:
+2. Instala las dependencias utilizando el archivo `setup.py`:
+    ```bash
+    python3 setup.py install
+    ```
+
+3. Ejecuta el programa:
+    ```bash
+    python3 color_analyzer.py
+    ```
+
+### **Requisitos del Sistema**
+
+Si decides clonar el repositorio y ejecutar el programa localmente, necesitarás tener las siguientes dependencias instaladas:
+
+- Python 3.0 o superior
+- `customtkinter`
+- `Pillow`
+- `pyperclip`
+- `numpy`
+- `scikit-learn`
+
+Para instalar las dependencias, puedes usar el siguiente comando:
 ```bash
-git clone https://github.com/KenadderBOSS/Color-Analyzer
-cd Color-Analyzer
-```
-## 1.2 Clonando el repositorio Instalación y Uso | Ubuntu/Linux
-Probado en Ubuntu 24.02 y funciona correctamente siguiendo los pasos a continuación
-
-
-Clonar repositorio
-```
-git clone https://github.com/KenadderBOSS/Color-Analyzer
-cd Color_Analyzer
+python3 setup.py install
 ```
 
-Crear un entorno virtual para Python
+### **Ejecución del Programa**
 
-```
-python3 -m venv color_analyzer
+Una vez instalado, puedes ejecutar el programa con el siguiente comando:
 
-source color_analyzer/bin/activate
-```
-
-Ejecutar setup.py para instalar dependencias
-
-``` 
-python3 setup.py
-``` 
-Lanzar Programa
-```
-python3 color_analysis.py
-``` 
-
-#### 2 Ejecuta el script en Python:
 ```bash
-
-python color_analyzer.py
+python3 color_analyzer.py
 ```
- 
-Carga una imagen y haz clic sobre un píxel para obtener su color.
 
-# Requisitos
-+ python 3.0 o +
-+ customtkinter
-+ pillow
-+ pyperclip
-+ numpy
-+ scikit-learn
+Carga una imagen y haz clic sobre un píxel para obtener su color en formato hexadecimal, que se copiará automáticamente al portapapeles.
 
-Si estas en otro sistema operativo y tienes algún error, hazmelo saber.
+---
+
+Si encuentras algún error o tienes preguntas sobre la instalación o el uso en otros sistemas operativos, no dudes en contactarme. ¡Estoy abierto a sugerencias y mejoras!
+
+---
+
+Ahora la instalación es más sencilla y compatible con ambos sistemas operativos. ¡Espero que te sea útil!
