@@ -1,5 +1,7 @@
 # EN CONSTRUCCIÓN
 
+Este programa esta hecho solo por mi, un estudiante de seguridad informática, es posible que encuentres errores, puedes ver el código del programa en todo momento y aceptaré consejos, optimizaciones o reutilización de este código en otro repositorio. 
+
 # ¿Para qué?
 Hoy en día, muchas páginas web ofrecen herramientas de análisis de colores o "color pickers", pero suelen requerir que subas imágenes a bases de datos externas. Esto puede no ser ideal por varias razones, especialmente cuando se trata de imágenes confidenciales o muy personales. Al utilizar estas plataformas, puedes estar comprometiendo tu privacidad al compartir imágenes sensibles sin una protección adecuada.
 
@@ -25,7 +27,10 @@ Este programa analiza una imagen y extrae los colores predominantes. Utiliza la 
 
 + Copia automática del código hexadecimal al portapapeles.
 
-## Instalación y Uso
+## 1 Instalación y Uso | Windows y Linux
+Descarga la ultima release y ejecuta el archivo.
+
+## 1.1 Instalación y Uso | Windows
 
 Opción 1. Descarga la ultima [🔗 release](https://github.com/KenadderBOSS/Color-Analyzer/releases)
 
@@ -34,7 +39,35 @@ Opción 2. Clona este repositorio:
 git clone https://github.com/KenadderBOSS/Color-Analyzer
 cd Color-Analyzer
 ```
-#### Ejecuta el script en Python:
+## 1.2 Instalación y Uso | Ubuntu/Linux
+Probado en Ubuntu 24.02 y funciona correctamente siguiendo los pasos a continuación
+
+
+Clonar repositorio
+```
+git clone https://github.com/KenadderBOSS/Color-Analyzer
+cd Color_Analyzer
+```
+
+Crear un entorno virtual para Python
+
+```
+python3 -m venv color_analyzer
+
+source color_analyzer/bin/activate
+```
+
+Ejecutar setup.py para instalar dependencias
+
+``` 
+python3 setup.py
+``` 
+Lanzar Programa
+```
+python3 color_analysis.py
+``` 
+
+#### 2 Ejecuta el script en Python:
 ```bash
 
 python color_analyzer.py
@@ -51,8 +84,3 @@ Carga una imagen y haz clic sobre un píxel para obtener su color.
 + scikit-learn
 
 Si estas en otro sistema operativo y tienes algún error, hazmelo saber.
-
-Instala las dependencias con pip:
-
-```bash
-pip install customtkinter pillow pyperclip numpy scikit-learn

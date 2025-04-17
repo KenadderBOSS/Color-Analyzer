@@ -1,0 +1,5 @@
+customtkinter
+pillow
+pyperclip
+numpy
+scikit-learn
