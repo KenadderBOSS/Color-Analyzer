@@ -28,9 +28,9 @@ Este programa analiza una imagen y extrae los colores predominantes. Utiliza la 
 + Copia automática del código hexadecimal al portapapeles.
 
 ## 1 Instalación y Uso | Windows y Linux
-Descarga la ultima release y ejecuta el archivo.
+Descarga la ultima release y ejecuta el archivo .exe .
 
-## 1.1 Instalación y Uso | Windows
+## 1.1 Clonando el repositorio el repositorio | Instalación y Uso | Windows 
 
 Opción 1. Descarga la ultima [🔗 release](https://github.com/KenadderBOSS/Color-Analyzer/releases)
 
@@ -39,7 +39,7 @@ Opción 2. Clona este repositorio:
 git clone https://github.com/KenadderBOSS/Color-Analyzer
 cd Color-Analyzer
 ```
-## 1.2 Instalación y Uso | Ubuntu/Linux
+## 1.2 Clonando el repositorio Instalación y Uso | Ubuntu/Linux
 Probado en Ubuntu 24.02 y funciona correctamente siguiendo los pasos a continuación
 
 
