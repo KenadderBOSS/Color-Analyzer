@@ -4,6 +4,11 @@
 
 Este programa ha sido desarrollado por mí, un estudiante de seguridad informática. A medida que lo uses, puedes encontrar errores o áreas de mejora. El código está disponible públicamente, y agradezco cualquier consejo, optimización o reutilización de este proyecto en otros repositorios.
 
+![coloranalyzergif](https://github.com/user-attachments/assets/94caccf8-8735-4175-be9a-96a32413c64b)
+
+![coloranalyzergif2](https://github.com/user-attachments/assets/73216c5a-fb14-44dc-a169-29f07b9bf200)
+
+
 ## **¿Por qué usar esta aplicación?**
 
 Hoy en día, existen muchas páginas web que ofrecen herramientas de análisis de colores o "color pickers", pero a menudo requieren que subas imágenes a servidores externos. Esto puede comprometer tu privacidad, especialmente si las imágenes son confidenciales o personales. 
